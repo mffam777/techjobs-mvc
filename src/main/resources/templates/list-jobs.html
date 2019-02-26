@@ -12,9 +12,15 @@
 
     <!-- TODO #3 - Use the same list display from search.html -->
 
-    <div th:replace="fragments :: results"></div>
+    <div th:if="${jobs}">
+        <table th:each="job : ${jobs}" class = "job-listing">
+            <tr th:each="row : ${job}" >
+                <td th:text ="${#strings.capitalize(row.key)}"/>
+                <td th:text ="${row.value}"/>
 
+            </tr>
+        </table>
+    </div>
 </div>
-
 </body>
 </html>
