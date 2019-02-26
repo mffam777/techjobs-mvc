@@ -39,13 +39,7 @@
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
 
     <div th:if="${jobs}">
-        <table th:each="job : ${jobs}" class = "job-listing">
-        <tr th:each="row : ${job}" >
-            <td th:text ="${#strings.capitalize(row.key)}"/>
-            <td th:text ="${row.value}"/>
-
-        </tr>
-        </table>
+        <div th:replace="fragments :: results"></div>
 
     </div>
 
