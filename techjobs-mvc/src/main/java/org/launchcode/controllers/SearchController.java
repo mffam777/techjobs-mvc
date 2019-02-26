@@ -6,10 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-<<<<<<< HEAD
-=======
-import java.util.ArrayList;
->>>>>>> b1a2b86727e19183b5aef10a5ce122a86acb7b44
 import java.util.HashMap;
 
 /**
@@ -26,7 +22,6 @@ public class SearchController {
     }
 
     // TODO #1 - Create handler to process search request and display results
-<<<<<<< HEAD
     @RequestMapping(value = "results")
     public String search(@RequestParam String searchType, @RequestParam String searchTerm, Model model) {
         Iterable<HashMap<String, String>> jobs;
@@ -43,7 +38,5 @@ public class SearchController {
 
         return "search";
     }
-=======
->>>>>>> b1a2b86727e19183b5aef10a5ce122a86acb7b44
 
 }
